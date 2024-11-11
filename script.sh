@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b 14/infinity .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Infinity-x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
