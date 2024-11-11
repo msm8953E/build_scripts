@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/SDM-439-BUILD/local_manifests -b RisingOS/14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b RisingOS/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=devil 
+export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -30,7 +30,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi439 userdebug
+riseup Mi439_4_19 userdebug
 echo "============="
 
 # Build rom
