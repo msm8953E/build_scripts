@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 15 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b RisingOS/14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Voltage/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -30,8 +30,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi439_4_19 userdebug
+	. build/envsetup.sh       
 echo "============="
 
 # Build rom
-rise b
+brunch Mi439_419
