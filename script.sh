@@ -29,9 +29,5 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-	. build/envsetup.sh       
-echo "============="
-
 # Build rom
-brunch Mi439_419
+brunch Mi439_4_19
