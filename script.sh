@@ -29,5 +29,12 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Build rom
+# Lunch
+lunch voltage_Mi439_4_19-userdebug || lunch voltage_Mi439_4_19-ap3a-userdebug || lunch voltage_Mi439_4_19-ap2a-userdebug
+make installclean
+mka bacon
+
+# lunch 
+. build/envsetup.sh
+brunch Mi439_4_19 userdebug
 brunch Mi439_4_19
