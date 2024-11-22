@@ -29,12 +29,7 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# lunch 
-. build/envsetup.sh
-brunch mi439 userdebug
-brunch mi439
-
 # Lunch
+. build/envsetup.sh
 lunch voltage_mi439-userdebug || lunch voltage_mi439-ap3a-userdebug || lunch voltage_mi439-ap2a-userdebug
-make installclean
 mka bacon
