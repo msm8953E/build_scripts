@@ -35,8 +35,8 @@ echo "====== Envsetup Done ======="
 rm -rf external/chromium-webview
 
 # Lunch
-lunch infinity_Mi439_4_19-ap3a-userdebug
 lunch infinity_Mi439_4_19-ap2a-userdebug
 lunch infinity_Mi439_4_19-userdebug
+lunch infinity_Mi439_4_19-ap3a-userdebug
 make installclean
 mka bacon
