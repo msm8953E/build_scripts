@@ -8,18 +8,18 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# repo sync
-/opt/crave/resync.sh && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-echo "============="
-echo "Sync success"
-echo "============="
-       
 # Local manifests
 git clone https://github.com/Gtajisan/local_manifests_clo -b Voltage/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# repo sync
+/opt/crave/resync.sh && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+echo "============="
+echo "Sync success"
+echo "============="
+       
 # Export
 export BUILD_USERNAME=Farhan 
 export BUILD_HOSTNAME=crave
@@ -29,12 +29,9 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-. build/envsetup.sh
-lunch voltage_mi439-userdebug ||  lunch voltage_mi439-ap2a-userdebug || lunch voltage_mi439-ap3a-userdebug 
-mka bacon
 # wt
 . build/envsetup.sh
 brunch mi439 userdebug
-brunch mi439
 breakfast mi439
+brunch mi439
+
