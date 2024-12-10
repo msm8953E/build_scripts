@@ -4,6 +4,7 @@ rm -rf .repo/local_manifests/
 
 # repo init rom
 repo init -u https://github.com/VoltageOS/manifest.git -b 15 --git-lfs
+        
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,7 +16,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh
+/opt/crave/resync.sh && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "============="
 echo "Sync success"
 echo "============="
