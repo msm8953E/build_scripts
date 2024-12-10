@@ -32,10 +32,11 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
+brunch mi439 userdebug
+breakfast mi439
 lunch voltage_mi439-userdebug ||  lunch voltage_mi439-ap2a-userdebug || lunch voltage_mi439-ap3a-userdebug 
 mka bacon
 # wt
 . build/envsetup.sh
-brunch mi439 userdebug
 brunch mi439
-breakfast mi439
+
