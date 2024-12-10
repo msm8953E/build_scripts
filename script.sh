@@ -37,3 +37,4 @@ mka bacon
 . build/envsetup.sh
 brunch mi439 userdebug
 brunch mi439
+breakfast mi439
