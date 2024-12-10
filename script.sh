@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=devil
+export BUILD_USERNAME=Farhan 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -33,3 +33,7 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 lunch voltage_mi439-userdebug ||  lunch voltage_mi439-ap2a-userdebug || lunch voltage_mi439-ap3a-userdebug 
 mka bacon
+# wt
+. build/envsetup.sh
+brunch mi439 userdebug
+brunch mi439
