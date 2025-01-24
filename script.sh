@@ -5,6 +5,7 @@ rm -rf .repo/local_manifests/
 # repo init rom
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault
 #repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
+
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -22,7 +23,16 @@ echo "Sync success"
 echo "============="
 
 # remove face unlock 
-rm -rf packages/apps/FaceUnlock
+#rm -rf packages/apps/FaceUnlock
+
+# play vendor_infinity-priv_keys
+git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+cd vendor/infinity-priv/keys
+./keys.sh
+cd ../../../
+echo "========================="
+echo "vendor_infinity-priv_keys"
+echo "========================="
 
 # Export
 export BUILD_USERNAME=FARHAN
@@ -38,7 +48,7 @@ echo "====== Envsetup Done ======="
 # Lunch
 . build/envsetup.sh
 lunch infinity_mi439-ap2a-userdebug
-lunch infinity_mi439-ap3a-userdebug
+lunch infinity_mi439-userdebug
 
 # make install
 make installclean
