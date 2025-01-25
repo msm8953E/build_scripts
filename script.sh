@@ -24,13 +24,13 @@ echo "============="
 #rm -rf packages/apps/FaceUnlock
 
 # play vendor_infinity-priv_keys
-#git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-#cd vendor/infinity-priv/keys
-#./keys.sh
-#cd ../../../
-#echo "========================="
-#echo "vendor_infinity-priv_keys"
-#echo "========================="
+git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+cd vendor/infinity-priv/keys
+./keys.sh
+cd ../../../
+echo "========================="
+echo "vendor_infinity-priv_keys"
+echo "========================="
 
 # Export
 export BUILD_USERNAME=FARHAN
