@@ -19,6 +19,13 @@ echo "============================"
 echo "============="
 echo "Sync success"
 echo "============="
+
+# vendor_voltage-priv_keys
+git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
+cd vendor/voltage-priv/keys
+./keys.sh
+cd ../../../
+echo "======= vendor voltage priv keys ======"
        
 # Export
 export BUILD_USERNAME=Farhan 
