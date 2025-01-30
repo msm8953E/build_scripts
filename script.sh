@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/VoltageOS/manifest.git -b 15 --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 15-qpr1 --git-lfs        
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -31,7 +31,6 @@ echo "====== Envsetup Done ======="
 
 # wt
 . build/envsetup.sh
-brunch mi439 userdebug
-breakfast mi439
 brunch mi439
+ 
 
