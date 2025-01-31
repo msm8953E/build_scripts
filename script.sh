@@ -34,10 +34,6 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
-echo "====== Envsetup Done ======="
-
-# wt
-. build/envsetup.sh
 brunch mi439
  
 
