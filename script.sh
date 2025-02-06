@@ -53,3 +53,13 @@ make installclean
 
 # make bacon
 mka bacon
+
+# sakura 
+lunch infinity_sakura-ap2a-userdebug
+lunch infinity_sakura-userdebug
+
+# make install
+make installclean
+
+# make bacon
+mka bacon
