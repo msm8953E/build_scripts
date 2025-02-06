@@ -3,14 +3,14 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 14 -g default,-mips,-darwin,-notdefault
 #repo init --no-repo-verify --git-lfs -u https://github.com/Trijal08/project_infinity_x-manifest -b 15 -g default,-mips,-darwin,-notdefault 
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b InfinityX/15 .repo/local_manifests
+git clone https://github.com/msm8953E/local_manifests -b infinity/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -33,11 +33,11 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # fix error 
-rm -rf external/chromium-webview
+#rm -rf external/chromium-webview
 
 # Lunch
-lunch infinity_Mi439_4_19-ap3a-userdebug
-lunch infinity_Mi439_4_19-ap2a-userdebug
-lunch infinity_Mi439_4_19-userdebug
+lunch infinity_daisy.mk-ap3a-userdebug
+lunch infinity_daisy.mk-ap2a-userdebug
+lunch infinity_daisy.mk-userdebug
 make installclean
 mka bacon
