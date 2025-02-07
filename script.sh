@@ -1,6 +1,8 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf android_device_xiaomi_daisy
+
 
 # repo init rom
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
@@ -10,6 +12,7 @@ echo "=================="
 
 # Local manifests
 git clone https://github.com/msm8953E/local_manifests -b infinity/14x .repo/local_manifests
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b lineage-21 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
