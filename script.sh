@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/local_manifests -b infinity/14 .repo/local_manifests
+git clone https://github.com/msm8953E/local_manifests -b infinity/14x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -54,12 +54,4 @@ make installclean
 # make bacon
 mka bacon
 
-# sakura 
-lunch infinity_sakura-ap2a-userdebug
-lunch infinity_sakura-userdebug
 
-# make install
-make installclean
-
-# make bacon
-mka bacon
