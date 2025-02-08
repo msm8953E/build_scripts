@@ -11,7 +11,6 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/local_manifests -b infinity/14x .repo/local_manifests
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/14 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
