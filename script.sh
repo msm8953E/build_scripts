@@ -23,7 +23,7 @@ echo "Sync success"
 echo "============="
 
 # remove face unlock 
-rm -rf packages/apps/FaceUnlock
+#rm -rf packages/apps/FaceUnlock
 
 # play vendor_infinity-priv_keys
 #git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
