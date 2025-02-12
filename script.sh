@@ -5,13 +5,13 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -41,19 +41,22 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
+# aging 
+rm -rf device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15 device/xiaomi/daisy
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch infinity_daisy-ap2a-userdebug
-lunch infinity_daisy-userdebug
-
+lunch lineage_daisy-userdebug
+lunch lineage_daisy-ap4a-userdebug
 # make install
 make installclean
 
 # make bacon
-mka bacon
+m evolution
 
 
