@@ -32,7 +32,6 @@ echo "============="
 
 # Lunch
 source build/envsetup.sh
-lunch aosp_mi439-userdebug
-echo "exported hostname"
-breakfast mi439 && make installclean && mka bacon -j$(nproc --all)
+lunch aosp_daisy-ap4a-buildtype
+make installclean && mka bacon 
 
