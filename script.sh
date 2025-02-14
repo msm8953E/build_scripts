@@ -3,13 +3,14 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
+#repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b vic .repo/local_manifests
+# repo
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b aosp device/xiaomi/daisy
+
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,6 +20,8 @@ echo "============================"
 echo "============="
 echo "Sync success"
 echo "============="
+# repo
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b aosp device/xiaomi/daisy
 
 # Export
 export BUILD_USERNAME=FARHAN
