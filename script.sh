@@ -3,13 +3,14 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-#repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 15-qpr1 --git-lfs
+        
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # repo
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b aosp device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b voltage/15x device/xiaomi/daisy
 
 echo "============================"
 echo "Local manifest clone success"
@@ -21,7 +22,7 @@ echo "============="
 echo "Sync success"
 echo "============="
 # repo
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b aosp device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b voltage/15x device/xiaomi/daisy
 
 # Export
 export BUILD_USERNAME=FARHAN
@@ -34,7 +35,5 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-source build/envsetup.sh
-lunch aosp_daisy-ap4a-userdebug
-make installclean && mka bacon 
-
+. build/envsetup.sh
+brunch daisy
