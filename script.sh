@@ -8,18 +8,21 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b Voltage/15x .repo/local_manifests
-echo "============================"
+
+# repo
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b voltage/15x device/xiaomi/daisy
+"============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # repo sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 /opt/crave/resync.sh 
 echo "============="
 echo "Sync success"
 echo "============="
+# repo
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b voltage/15x device/xiaomi/daisy
+
 
 # vendor_voltage-priv_keys
 git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
@@ -35,6 +38,7 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
-brunch mi439
+brunch daisy
+
  
 
