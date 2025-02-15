@@ -35,6 +35,6 @@ echo "============="
 
 # Lunch
 source build/envsetup.sh
-lunch aosp_daisy-ap4a-buildtype
+lunch aosp_daisy-ap4a-userdebug
 make installclean && mka bacon 
 
