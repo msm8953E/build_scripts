@@ -32,7 +32,7 @@ cd ../../../
 echo "======= vendor voltage priv keys ======"
        
 # Export
-export BUILD_USERNAME=Farhan 
+export BUILD_USERNAME=daisy 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
