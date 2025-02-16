@@ -5,7 +5,7 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -53,10 +53,6 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 lunch lineage_daisy-userdebug
 lunch lineage_daisy-ap4a-userdebug
-# make install
-make installclean
-
-# make bacon
-m evolution
+brunch daisy
 
 
