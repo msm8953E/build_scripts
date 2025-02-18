@@ -21,14 +21,15 @@ echo "============="
 echo "Sync success"
 echo "============="
 # repo
+rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b voltage/15x device/xiaomi/daisy
 
 
 # vendor_voltage-priv_keys
-git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
-cd vendor/voltage-priv/keys
-./keys.sh
-cd ../../../
+#git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
+#cd vendor/voltage-priv/keys
+#./keys.sh
+#cd ../../../
 echo "======= vendor voltage priv keys ======"
        
 # Export
