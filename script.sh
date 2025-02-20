@@ -26,6 +26,8 @@ echo "============="
 #rm -rf packages/apps/FaceUnlock
 
 # repo
+rm -rf vendor/infinity
+git clone https://github.com/Gtajisan/vendor_infinity -b 15 vendor/infinity
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/15 device/xiaomi/daisy
 
 # play vendor_infinity-priv_keys
