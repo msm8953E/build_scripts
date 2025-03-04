@@ -52,6 +52,6 @@ echo "====== Envsetup Done ======="
 # Lunch
 
 . build/envsetup.sh
-blissify options daisy
+blissify -f daisy
 blissify daisy
 
