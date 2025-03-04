@@ -5,7 +5,8 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+#repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
