@@ -5,13 +5,13 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.3-stable-voyager --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Bliss/15 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -43,16 +43,15 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Bliss/15 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-. build/envsetup.sh
-lunch lineage_daisy-userdebug
-lunch lineage_daisy-ap4a-userdebug
-brunch daisy
 
+. build/envsetup.sh
+blissify options daisy
+blissify daisy
 
