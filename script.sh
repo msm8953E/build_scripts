@@ -6,13 +6,13 @@ rm -rf android_device_xiaomi_daisy
 
 # repo init rom
 #repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/device_xiaomi_daisy.git -b A14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/device_xiaomi_daisy.git -b Evo/15 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -27,12 +27,12 @@ echo "============="
 #rm -rf packages/apps/FaceUnlock
 
 # play vendor_infinity-priv_keys
-#git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-#cd vendor/infinity-priv/keys
-#./keys.sh
-#cd ../../../
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./keys.sh
+cd ../../..
 echo "========================="
-echo "vendor_infinity-priv_keys"
+echo "vendor_evo-priv_keys"
 echo "========================="
 
 # Export
@@ -54,6 +54,6 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 lunch lineage_daisy-userdebug
 lunch lineage_daisy-ap4a-userdebug
-brunch daisy
+m evolution
 
 
