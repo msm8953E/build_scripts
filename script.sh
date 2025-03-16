@@ -36,5 +36,6 @@ echo "============="
 
 # Lunch
 . build/envsetup.sh
+lunch aosp_daisy-userdebug
 lunch aosp_daisy-ap4a-userdebug
 mka bacon
