@@ -36,11 +36,11 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
 #toggle for mainteriner 
-#cd packages/apps/Settings
-#git fetch crdroid --unshallow
-#git fetch https://github.com/Gtajisan/android_packages_apps_Settings.git 14.0
-#git cherry-pick a46bc2b05cb508aa8cdf21d9d0b0ebfb332c8b42
-#cd ../../..
+cd packages/apps/Settings
+git fetch crdroid --unshallow
+git fetch https://github.com/Gtajisan/android_packages_apps_Settings.git 14.0
+git cherry-pick a46bc2b05cb508aa8cdf21d9d0b0ebfb332c8b42
+cd ../../..
 
 
 # aging 
