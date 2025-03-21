@@ -54,5 +54,5 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 lunch lineage_earth-userdebug
 lunch lineage_earth-ap2a-userdebug
-brunch sakura
+brunch earth
 
