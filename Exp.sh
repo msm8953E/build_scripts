@@ -12,7 +12,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/device_xiaomi_sakura.git -b lineage-21 device/xiaomi/daisy
+git clone https://github.com/Gtajisan/android_device_xiaomi_earth.git -b Cr/14 device/xiaomi/earth
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -43,8 +43,8 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
 # aging 
-rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/device_xiaomi_sakura.git -b lineage-21 device/xiaomi/daisy
+rm -rf device/xiaomi/earth
+git clone https://github.com/Gtajisan/android_device_xiaomi_earth.git -b Cr/14 device/xiaomi/earth
 
 # Set up build environment
 source build/envsetup.sh
@@ -52,7 +52,7 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch lineage_sakura-userdebug
-lunch lineage_sakura-ap4a-userdebug
+lunch lineage_earth-userdebug
+lunch lineage_earth-ap2a-userdebug
 brunch sakura
 
