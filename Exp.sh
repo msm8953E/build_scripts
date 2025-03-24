@@ -12,7 +12,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/android_device_xiaomi_earth.git -b Cr/14 device/xiaomi/earth
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy.git -b Cr/14 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -44,7 +44,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/earth
-git clone https://github.com/Gtajisan/android_device_xiaomi_earth.git -b Cr/14 device/xiaomi/earth
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy.git -b axion/15 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
@@ -52,7 +52,7 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch lineage_earth-userdebug
-lunch lineage_earth-ap2a-userdebug
+axion daisy
+axion daisy va
 brunch earth
 
