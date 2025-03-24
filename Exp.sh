@@ -6,7 +6,7 @@ rm -rf android_device_xiaomi_daisy
 
 # repo init rom
 #repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -40,6 +40,7 @@ export BUILD_USERNAME=ome
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
+export TARGET_INCLUDE_VIPERFX := true
 echo "======= Export Done ======"
 
 # aging 
