@@ -53,7 +53,8 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-axion daisy
+lunch lineage_daisy-ap2a-userdebug
+axion daisy userdebug
 axion daisy va
-brunch earth
+brunch daisy
 
