@@ -11,7 +11,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/15 device/xiaomi/daisy
+git clone https://github.com/Gtajisan/device_xiaomi_rosy.git -b 15 device/xiaomi/rosy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -24,11 +24,6 @@ echo "============="
 
 # remove face unlock 
 #rm -rf packages/apps/FaceUnlock
-
-# repo
-rm -rf vendor/infinity
-git clone https://github.com/Gtajisan/vendor_infinity -b 15 vendor/infinity
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/15 device/xiaomi/daisy
 
 # play vendor_infinity-priv_keys
 git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
@@ -46,14 +41,20 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
+# Local manifests
+git clone https://github.com/Gtajisan/device_xiaomi_rosy.git -b 15 device/xiaomi/rosy
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch infinity_daisy-ap2a-userdebug
-lunch infinity_daisy-userdebug
+lunch infinity_rosy-ap2a-userdebug
+lunch infinity_rosy-userdebug
 
 # make install
 make installclean
