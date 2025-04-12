@@ -27,7 +27,7 @@ echo "============="
 
 
 # Export
-export BUILD_USERNAME=ome 
+export BUILD_USERNAME=Daisy 
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
@@ -43,10 +43,11 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-axion daisy <variant>
+axion daisy userdebug
 axion daisy gms pico
 # Run to prepare our devices list
 # ... now run
+mka bacon
 brunch daisy
 
 
