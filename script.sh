@@ -30,7 +30,7 @@ echo "============="
 #git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 #cd vendor/evolution-priv/keys
 #./keys.sh
-cd ../../..
+#cd ../../..
 echo "========================="
 echo "vendor_evo-priv_keys"
 echo "========================="
@@ -54,6 +54,7 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 lunch lineage_daisy-userdebug
 lunch lineage_daisy-ap4a-userdebug
+lunch lineage_daisy-bp1a-userdebug
 m evolution
 
 
