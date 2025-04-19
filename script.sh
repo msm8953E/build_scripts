@@ -5,15 +5,15 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-#repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+#repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
 
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b cr/14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15-qpr2 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -45,7 +45,7 @@ cd ../../..
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b cr/14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Evo/15-qpr2 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
@@ -54,7 +54,7 @@ echo "====== Envsetup Done ======="
 # Lunch
 . build/envsetup.sh
 lunch lineage_daisy-userdebug
-lunch lineage_daisy-ap2a-userdebug
+lunch lineage_daisy-ap4a-userdebug
 # Run to prepare our devices list
 # ... now run
 brunch daisy
