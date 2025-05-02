@@ -5,13 +5,13 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -27,7 +27,7 @@ echo "============="
 
 # repo
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b infinity/14 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
 
 # play vendor_infinity-priv_keys
 #git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
@@ -52,7 +52,7 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch infinity_daisy-ap2a-userdebug
+lunch infinity_daisy-ap4a-userdebug
 lunch infinity_daisy-userdebug
 
 # make install
