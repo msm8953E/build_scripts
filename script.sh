@@ -11,10 +11,18 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
+
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
+git clone https://github.com/Gtajisan/local_manifests -b WebView .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
+echo "============================"
+
+
+# tree 
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
+echo "============================"
+echo "tree or some ex clone       "
 echo "============================"
 
 # build
