@@ -52,7 +52,7 @@ echo "======= Export Done ======"
 
 # platform/external/chromium-webview
 rm -rf  external/chromium-webview 
-git clone https://github.com/LineageOS/android_external_chromium-webview.git external/chromium-webview
+git clone https://github.com/Gtajisan/android_external_chromium-webview -b Custom external/chromium-webview
 
 # aging 
 rm -rf device/xiaomi/daisy
