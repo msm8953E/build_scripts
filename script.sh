@@ -13,7 +13,7 @@ echo "=================="
 
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b WebView .repo/local_manifests
+#git clone https://github.com/Gtajisan/local_manifests -b WebView .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -35,10 +35,10 @@ echo "============="
 #rm -rf packages/apps/FaceUnlock
 
 # play vendor_infinity-priv_keys
-#git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-#cd vendor/evolution-priv/keys
-#./keys.sh
-#cd ../../..
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./keys.sh
+cd ../../..
 echo "========================="
 echo "vendor_evo-priv_keys"
 echo "========================="
@@ -49,6 +49,10 @@ export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
+
+# platform/external/chromium-webview
+rm -rf  external/chromium-webview 
+git clone https://github.com/LineageOS/android_external_chromium-webview.git external/chromium-webview
 
 # aging 
 rm -rf device/xiaomi/daisy
