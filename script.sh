@@ -69,8 +69,3 @@ lunch lineage_daisy-ap4a-userdebug
 lunch lineage_daisy-bp1a-userdebug
 m evolution
 
-# dux error
-/opt/crave/resync.sh
-. build/envsetup.sh
-lunch lineage_daisy-bp1a-userdebug
-m evolution
