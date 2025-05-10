@@ -58,6 +58,22 @@ echo "======= Export Done ======"
 rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
 
+# Go to the root of your ROM source
+#cd ~/android/lineage  # or wherever your ROM is
+
+# these not need in crave 
+
+# Remove broken SettingsIntelligence
+rm -rf packages/apps/SettingsIntelligence
+
+# Clone a compatible repo (example from los)
+git clone https://github.com/LineageOS/android_packages_apps_SettingsIntelligence.git -b lineage-22.2 packages/apps/SettingsIntelligence
+
+# Optional: If you're also missing the layout file, you can grab a known working repo
+# Replace with working frameworks/base if needed
+# git clone https://github.com/crdroidandroid/android_frameworks_base -b 15.0 frameworks/base
+
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
