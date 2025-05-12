@@ -36,8 +36,8 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
 #toggle for mainteriner 
-rm -rf packages/apps/Settings
-https://github.com/msm8953E/android_packages_apps_Settings.git -b 15.0 packages/apps/Settings
+#rm -rf packages/apps/Settings
+#https://github.com/msm8953E/android_packages_apps_Settings.git -b 15.0 packages/apps/Settings
 
 # aging 
 rm -rf device/xiaomi/daisy
