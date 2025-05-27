@@ -30,13 +30,19 @@ rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
 
 # play vendor_infinity-priv_keys
-#git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-#cd vendor/infinity-priv/keys
-#./keys.sh
-#cd ../../../
+git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+cd vendor/infinity-priv/keys
+./keys.sh
+cd ../../../
 #echo "========================="
 #echo "vendor_infinity-priv_keys"
 #echo "========================="
+
+# cherry pick 1
+cd vendor/infinity
+git fetch https://github.com/Gtajisan/vendor_infinity.git
+git cherry-pick  05ca5fb2b7c107395df1a32c16f2f89ecebab218
+cd ../..
 
 # Export
 export BUILD_USERNAME=achu 
