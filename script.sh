@@ -5,15 +5,13 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-#repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-
+repo init -u https://github.com/GazaOS/android.git -b 15.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -41,7 +39,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
