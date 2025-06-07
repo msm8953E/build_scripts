@@ -40,7 +40,7 @@ echo "======= Export Done ======"
 # aging 
 rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Los22 device/xiaomi/daisy
-
+grep -rnw 'device/lineage/sepolicy' -e 'type lirc_device'
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
