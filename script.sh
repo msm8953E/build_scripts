@@ -20,7 +20,7 @@ echo "============================"
 
 
 # tree 
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b 15.0 device/xiaomi/daisy
+git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b 15.0 device/xiaomi/daisy
 echo "============================"
 echo "tree or some ex clone       "
 echo "============================"
@@ -49,7 +49,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b 15.0 device/xiaomi/daisy
+git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b 15.0 device/xiaomi/daisy
 
 # Go to the root of your ROM source
 #cd ~/android/lineage  # or wherever your ROM is
