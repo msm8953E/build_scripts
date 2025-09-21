@@ -30,6 +30,8 @@ export BUILD_USERNAME=achu
 export BUILD_HOSTNAME=crave_x_shaaim
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
+export WITH_GMS= false
+export MISTOS_MAINTAINER="FRN"
 echo "======= Export Done ======"
 
 # aging 
