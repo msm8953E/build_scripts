@@ -6,7 +6,7 @@ rm -rf android_device_xiaomi_daisy
 
 # repo init rom
 #repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android.git -b 16.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -20,7 +20,7 @@ echo "============================"
 
 
 # tree 
-git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b 15.0 device/xiaomi/daisy
+git clone https://github.com/Gtajisan/android_device_xiaomi_daisy-b 16 device/xiaomi/daisy
 echo "============================"
 echo "tree or some ex clone       "
 echo "============================"
@@ -37,7 +37,7 @@ echo "============="
 # play vendor_infinity-priv_keys
 #
 # Export
-export BUILD_USERNAME=achu 
+export BUILD_USERNAME=Gtajisan 
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
@@ -49,7 +49,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b 15.0 device/xiaomi/daisy
+git clone https://github.com/Gtajisan/android_device_xiaomi_daisy -b 16 device/xiaomi/daisy
 
 # Go to the root of your ROM source
 #cd ~/android/lineage  # or wherever your ROM is
