@@ -53,6 +53,9 @@ echo "======= Export Done ======"
 rm -rf external/ant-wireless/ant_client
 rm -rf external/ant-wireless/ant_native
 rm -rf external/ant-wireless/ant_service
+rm -rf packages/apps/Settings
+git clone https://github.com/Gtajisan/android_packages_apps_Settings_mod -b 16.0 packages/apps/Settings
+
 # Go to the root of your ROM source
 #cd ~/android/lineage  # or wherever your ROM is
 
