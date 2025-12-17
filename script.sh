@@ -6,8 +6,8 @@ rm -rf android_device_xiaomi_daisy
 
 # repo init rom
 #repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-repo init -u https://github.com/ProjectMatrixx/android.git -b 16.0 --git-lfs
-echo "=================="
+#repo init -u https://github.com/ProjectMatrixx/android.git -b 16.0 --git-lfs
+#echo "=================="
 echo "Repo init success"
 echo "=================="
 
@@ -20,13 +20,13 @@ echo "============================"
 
 
 # tree 
-git clone https://github.com/Gtajisan/android_device_xiaomi_daisy-b 16 device/xiaomi/daisy
+#git clone https://github.com/Gtajisan/android_device_xiaomi_daisy-b 16 device/xiaomi/daisy
 echo "============================"
 echo "tree or some ex clone       "
 echo "============================"
 
 # build
-/opt/crave/resync.sh
+#/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
@@ -48,9 +48,11 @@ echo "======= Export Done ======"
 #git clone https://github.com/Gtajisan/android_external_chromium-webview -b Custom external/chromium-webview
 
 # aging 
-rm -rf device/xiaomi/daisy
-git clone https://github.com/Gtajisan/android_device_xiaomi_daisy -b 16 device/xiaomi/daisy
-
+#rm -rf device/xiaomi/daisy
+#git clone https://github.com/Gtajisan/android_device_xiaomi_daisy -b 16 device/xiaomi/daisy
+rm -rf external/ant-wireless/ant_client
+rm -rf external/ant-wireless/ant_native
+rm -rf external/ant-wireless/ant_service
 # Go to the root of your ROM source
 #cd ~/android/lineage  # or wherever your ROM is
 
